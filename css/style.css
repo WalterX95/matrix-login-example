@@ -1,0 +1,110 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  #special-login-box {
+    width: 45vw;
+    height: 50vh;
+    border: 1px;
+    transform: translate(50%, 50%);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins';
+    text-shadow: 0 0.2px #000000;
+    z-index: 1;
+    position: absolute;
+    color: #81d688;
+  }
+
+  #special-login-box input {
+    align-content: flex-start;
+    color:#81d688;
+    background: #00000087;
+  }
+
+  #special-login-box label {
+    display: block;
+  }
+
+  canvas #canv {
+    width:100vw;
+    height: 100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+  }
+
+#canvas-wrap { 
+  position:relative; 
+  width:100vw; 
+  height:100vh; 
+}
+#canvas-wrap canvas {
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:0; 
+   width: inherit;
+   height: inherit;
+}
+
+#btnLogin {
+  border:2px solid green;
+  position: absolute;
+  top: 19vh;
+  right: 20vw;
+  background-color: #000000;
+  border:2px solid #81d688;
+  color: white;
+}
+
+#btnLogin:hover {
+  background-color: #81d688;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#btnPassToText .material-symbols-outlined {
+  position: absolute;
+  top: 5.3vw;
+  left: 27vw;
+}
+
+#btnPassToText  .material-symbols-outlined:hover {
+   background-color: chartreuse;
+   transition: ease-in(200,200);
+}
+
+
+
